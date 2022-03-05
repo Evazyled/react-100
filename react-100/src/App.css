@@ -63,15 +63,6 @@ ul {
     list-style: none;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
-    color: yellow;
-}
-
 .header {
     grid-area: h;
     background-color: green;
@@ -81,68 +72,7 @@ a:hover {
     width: 70px;
 }
 
-.nav-sidebar {
-    grid-area: n;
-    background-color: brown;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-}
-
-.content {
-    grid-area: c;
-}
-
-.content-img {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 10px;
-}
-
-.profile-img {
-    width: 100px;
-    height: 100px;
-}
-
 /* .profile {
     display: flex;
     flex-direction: column;
 } */
-
-.newposts {
-    margin-top: 50px;
-}
-
-.input-form {
-    width: 50%;
-}
-
-.posts {
-    margin-bottom: 50px;
-}
-
-.posts__title {
-    font-size: 24px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-textarea {
-    resize: none;
-    width: 100%;
-    height: 50px;
-}
-
-.input-form button {
-    display: block;
-    float: right;
-    width: 100px;
-    background-color: green;
-    color: white;
-    cursor: pointer;
-}
-
-.posts {
-    margin-bottom: 50px;
-}

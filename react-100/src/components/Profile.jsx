@@ -1,16 +1,17 @@
 import React from 'react'
+import s from '../ui/Profile.module.css'
 
 const Profile = () => (
-    <div className="content">
+    <div className={s.content}>
         <img
             src="https://farm4.staticflickr.com/3838/14265729530_22a41fa068_c.jpg"
-            className="content-img"
+            className={s.content__img}
             alt="content"
         />
         <div className="profile">
             <img
                 src="https://pobierak.jeja.pl/avatars/7/6/b/86339_square.jpg"
-                className="profile-img"
+                className={s.profile__img}
                 alt="avatar"
             />
             <div className="description">
@@ -18,16 +19,16 @@ const Profile = () => (
                     <p>Name</p>
                 </div>
             </div>
-            <div className="posts">
-                <div className="posts__title">My posts</div>
-                <div className="input-form">
+            <div className={s.posts}>
+                <div className={s.posts__title}>My posts</div>
+                <div className={s.inputForm}>
                     <textarea placeholder="new news" />
                     <button type="button">send</button>
                 </div>
 
-                <div className="newposts">
-                    <div className="newpost">Hey,why nobody love me?</div>
-                    <div className="newpost">it`s our new program</div>
+                <div className="newpost">
+                    <div className={s.newPostItem}>Hey,why nobody love me?</div>
+                    <div className={s.newPostItem}>it`s our new program</div>
                 </div>
             </div>
         </div>
