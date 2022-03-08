@@ -1,5 +1,6 @@
 import React from 'react'
-import s from '../ui/Profile.module.css'
+import MyPosts from './MyPosts/MyPosts'
+import s from './Profile.module.css'
 
 const Profile = () => (
     <div className={s.content}>
@@ -19,19 +20,8 @@ const Profile = () => (
                     <p>Name</p>
                 </div>
             </div>
-            <div className={s.posts}>
-                <div className={s.posts__title}>My posts</div>
-                <div className={s.inputForm}>
-                    <textarea placeholder="new news" />
-                    <button type="button">send</button>
-                </div>
-
-                <div className="newpost">
-                    <div className={s.newPostItem}>Hey,why nobody love me?</div>
-                    <div className={s.newPostItem}>it`s our new program</div>
-                </div>
-            </div>
         </div>
+        <MyPosts />
     </div>
 )
 

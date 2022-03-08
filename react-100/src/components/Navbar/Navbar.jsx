@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../ui/Navbar.module.css'
+import styles from './Navbar.module.css'
 
 const Navbar = () => (
     <nav className={styles.navSidebar}>

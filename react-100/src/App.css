@@ -63,15 +63,6 @@ ul {
     list-style: none;
 }
 
-.header {
-    grid-area: h;
-    background-color: green;
-}
-
-.header img {
-    width: 70px;
-}
-
 /* .profile {
     display: flex;
     flex-direction: column;
