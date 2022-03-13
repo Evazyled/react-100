@@ -1,25 +1,59 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import styles from './Navbar.module.css'
 
 const Navbar = () => (
     <nav className={styles.navSidebar}>
         <ul className="mainmenu">
             <li className={styles.mainMenuItem}>
-                <a href="w">Profile</a>
+                <NavLink
+                    to="/profile"
+                    className={({ isActive }) =>
+                        isActive ? styles.activeLink : styles.mainMenuItem
+                    }
+                >
+                    Profile
+                </NavLink>
             </li>
             <li className={styles.mainMenuItem}>
-                <a href="w">Messages</a>
+                <NavLink
+                    to="/dialogs"
+                    className={({ isActive }) =>
+                        isActive ? styles.activeLink : styles.mainMenuItem
+                    }
+                >
+                    Messages
+                </NavLink>
             </li>
             <li className={styles.mainMenuItem}>
-                <a href="w" className={`${styles.link} ${styles.active}`}>
+                <NavLink
+                    to="/news"
+                    className={({ isActive }) =>
+                        isActive ? styles.activeLink : styles.mainMenuItem
+                    }
+                >
                     News
-                </a>
+                </NavLink>
             </li>
             <li className={styles.mainMenuItem}>
-                <a href="w">music</a>
+                <NavLink
+                    to="/music"
+                    className={({ isActive }) =>
+                        isActive ? styles.activeLink : styles.mainMenuItem
+                    }
+                >
+                    Music
+                </NavLink>
             </li>
             <li className={styles.mainMenuItem}>
-                <a href="w">settings</a>
+                <NavLink
+                    to="/settings"
+                    className={({ isActive }) =>
+                        isActive ? styles.activeLink : styles.mainMenuItem
+                    }
+                >
+                    Settings
+                </NavLink>
             </li>
         </ul>
     </nav>

@@ -1,8 +1,14 @@
-.posts {
-    margin-top: 50px;
+.myPosts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
 }
 
-.inputForm {
+.posts li:last-child {
+    margin-bottom: 0;
+}
+
+.myPostsInputForm {
     width: 70%;
     margin-bottom: 50px;
 }
@@ -25,8 +31,4 @@ textarea {
     background-color: green;
     color: white;
     cursor: pointer;
-}
-
-.newPostItem {
-    margin-bottom: 50px;
 }

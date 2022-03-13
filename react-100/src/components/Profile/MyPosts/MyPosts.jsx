@@ -11,9 +11,9 @@ const MyPosts = () => (
         </div>
 
         <div className={s.posts}>
-            <Post message="Hello world" />
-            <Post message="Hi" />
-            <Post message="What are you doing?" />
+            <Post message="Hello world" likesCount={2} />
+            <Post message="Hi" likesCount={56} />
+            <Post message="What are you doing?" likesCount={33} />
         </div>
     </div>
 )

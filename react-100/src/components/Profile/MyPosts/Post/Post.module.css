@@ -7,3 +7,7 @@
     height: 60px;
     border-radius: 30px;
 }
+
+.newPostItem:last-child {
+    margin-bottom: 0;
+}

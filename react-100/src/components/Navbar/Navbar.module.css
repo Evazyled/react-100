@@ -1,14 +1,5 @@
-a {
-    text-decoration: none;
-    color: white;
-}
-
-a:hover {
+.mainMenuItem a:hover {
     color: yellow;
-}
-
-.active {
-    color: aqua;
 }
 
 .link {
@@ -17,15 +8,20 @@ a:hover {
 
 .navSidebar {
     grid-area: n;
-    background-color: brown;
+    background-color: lightgray;
 }
 
 nav {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
 }
 
-.mainMenuItem {
-    list-style-type: upper-roman;
-    color: pink;
+.mainMenuItem a {
+    color: white;
+    text-decoration: none;
+}
+
+.mainMenuItem a.activeLink {
+    color: green;
 }

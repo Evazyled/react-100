@@ -3,7 +3,7 @@ import MyPosts from './MyPosts/MyPosts'
 import s from './Profile.module.css'
 
 const Profile = () => (
-    <div className={s.content}>
+    <div className={s.contentInner}>
         <img
             src="https://farm4.staticflickr.com/3838/14265729530_22a41fa068_c.jpg"
             className={s.content__img}
